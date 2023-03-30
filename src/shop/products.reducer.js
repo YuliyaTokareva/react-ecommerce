@@ -1,7 +1,7 @@
 import { PRODUCTS_LIST_RECIEVED, SHOW_SPINNER } from './products.actions';
 
 const initialState = {
-  productsList: {},
+  productsList: [],
 
   isFetching: false
 };

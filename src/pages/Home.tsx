@@ -1,21 +1,27 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { ROUTES } from '../routes';
+import Products from '../shop/components/products/Products';
+import Wrapper from '../shop/components/wrapper/Wrapper';
+
 import * as productsActions from '../shop/products.actions';
 import * as productsSelectors from '../shop/products.selectors';
 
-const Home = ({ getCandidatesList }) => {
+const Home = ({ getProductList }) => {
   useEffect(() => {
-    getCandidatesList();
+    getProductList();
   }, []);
   const navigate = useNavigate();
-  return <h1 onClick={() => navigate(ROUTES.pageId(1))}>home</h1>;
+  return (
+    <Wrapper>
+      <Products />
+    </Wrapper>
+  );
 };
 
 const mapDispatch = (dispatch) => {
   return {
-    getCandidatesList: () => dispatch(productsActions.getCandidatesList())
+    getProductList: () => dispatch(productsActions.getProductList())
   };
 };
 const mapState = (state) => {

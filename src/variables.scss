@@ -1,22 +1,23 @@
 ///Text color
+$color-text: #505050;
+$color-title-light: #8b96a5;
+$color-title: #1c1c1c;
+$color-blue-light: #8cb7f5;
+$color-blue-dark: #0d6efd;
+$color-gray: #333333;
 
-$color-dark: #000000;
-$color-gray: #8e8e93;
-$color-main: #6e798c;
-$color-dark-gray: #081f32;
 ///Bg color
-$main-bg: #ffffff;
+$main-bg: #f7fafc;
 
-//shadow color
+$main-card-bg: #ffffff;
 
-$box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12),
-  0px 2px 4px rgba(0, 0, 0, 0.14);
+//hadow color
+
+$button-shadow: 0px 1px 2px rgba(56, 56, 56, 0.08);
 
 // border-radius
-$br: 4px;
-$br-ls: 8px;
+$br: 6px;
 
 // border
-$border-search: 1px solid rgba(0, 0, 0, 0.5);
-$border-line: 1px solid #6e798c29;
-$border-photo: 5px solid #f2f2f7;
+$border-button-blue: 1px solid #0d6efd;
+$border-button-gray: 1px solid #dee2e7;

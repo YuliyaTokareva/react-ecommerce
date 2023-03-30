@@ -16,7 +16,7 @@ export const fetchCandidatesListRecieved = (productsList) => {
   return action;
 };
 
-export const getCandidatesList = () => {
+export const getProductList = () => {
   // eslint-disable-next-line
   const thunkAction = function (dispatch) {
     dispatch(showSpinner());
